@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+
+    --white: hsl(0, 0%, 100%);
+    --ligth:  hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+     font-size: 15px;
+     font-family: 'Open Sans', sans-serif;
+}
+
+html {
+
+    background-color: var(--ligth)
+}
+
+::-webkit-scrollbar {
+
+    overflow: hidden;
+    width: 1px;
+}
+
+.card__container {
+    
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.card__img > img {
+
+   
+    height: 290px;
+    object-fit: cover;
+    border-radius: 5%;
+
+}
+
+.card__content {
+
+
+    display: flex  ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card__content > * { padding: 0 4px;}
+
+h1 {
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 1000;
+    
+    
+}
+
+p {
+    
+    font-weight: 400;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+   
+footer {
+    width: 97%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+.attribution {
+
+    position:static;
+    display: flex;
+    justify-content: center;
+    
+}
